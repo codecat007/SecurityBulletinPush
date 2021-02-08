@@ -14,6 +14,7 @@ $(function(){
             $("#ios-link").attr("href", result[2])
             $("#datetime").html(new Date().toLocaleString())
         })
+    } else if (window.location.pathname.endsWith("/chipset.html")) {
         $.get("http://api.wrlus.com/security/qualcomm", {}, function(response) {
             var exp = /\(\'(\S*)\'\, \'(\S*)\'\)/
             var result = exp.exec(response)
