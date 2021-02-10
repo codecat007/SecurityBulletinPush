@@ -4,8 +4,8 @@ import datetime
 
 
 base_url = {
-    False: 'https://source.android.com/security/bulletin',
-    True: 'https://source.android.google.cn/security/bulletin'
+    False: 'https://source.android.com/security/bulletin/pixel',
+    True: 'https://source.android.google.cn/security/bulletin/pixel'
 }
 useGoogleCN = True
 

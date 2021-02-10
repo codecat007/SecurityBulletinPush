@@ -1,5 +1,6 @@
 import requests
 import re
+import datetime
 
 
 base_url = 'https://www.qualcomm.com/company/product-security/bulletins'

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>移动平台 - 安全补丁查询</title>
+  <title>主页 - 安全补丁查询</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body class="d-flex flex-column h-100">
@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="index.html">移动平台</a>
+            <a class="nav-link active" aria-current="page" href="index.html">主页</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="chipset.html">供应商</a>
@@ -32,8 +32,8 @@
 <main class="flex-shrink-0">
   <div class="container">
     <div class="container">
-      <h1 class="mt-5">移动平台安全补丁</h1>
-      <p class="lead">Android平台会按月发布安全公告，而iOS平台则会随版本发布安全更新，不会例行发布。</p>
+      <h1 class="mt-5">安全补丁</h1>
+      <p class="lead">Google和Microsoft会按月发布安全公告，而Apple则会随版本发布安全更新，不会例行发布。</p>
       <p>更新时间: <a id="datetime">尚未更新</a></p>
     </div>
     <div class="card-group">
@@ -46,9 +46,55 @@
       </div>
       <div class="card">
         <div class="card-body">
+          <h5 class="card-title" id="pixel-result">查询中...</h5>
+          <p class="card-text">最新 Pixel 安全补丁程序级别</p>
+          <a id="pixel-link" href="#" class="btn btn-primary">查看详情</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" id="aaos-result">查询中...</h5>
+          <p class="card-text">最新 AAOS 安全补丁程序级别</p>
+          <a id="aaos-link" href="#" class="btn btn-primary">查看详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
           <h5 class="card-title" id="ios-result">查询中...</h5>
           <p class="card-text">最新 Apple iOS/iPad OS 安全性更新</p>
           <a id="ios-link" href="#" class="btn btn btn-primary">查看详情</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" id="macos-result">查询中...</h5>
+          <p class="card-text">最新 Apple macOS 安全性更新</p>
+          <a id="macos-link" href="#" class="btn btn btn-primary">查看详情</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" id="tvos-result">查询中...</h5>
+          <p class="card-text">最新 Apple tvOS 安全性更新</p>
+          <a id="tvos-link" href="#" class="btn btn btn-primary">查看详情</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" id="watchos-result">查询中...</h5>
+          <p class="card-text">最新 Apple watchOS 安全性更新</p>
+          <a id="watchos-link" href="#" class="btn btn btn-primary">查看详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" id="microsoft-result">查询中...</h5>
+          <p class="card-text">最新 Microsoft 安全公告</p>
+          <a id="microsoft-link" href="#" class="btn btn btn-primary">查看详情</a>
         </div>
       </div>
     </div>
